@@ -18,7 +18,12 @@ public class AnimalFarm {
 		 */
 		
 		/* 2. Make it so that the user can keep entering new animals. */
-	}
+				for (int i=1; i<999999999;) {
+					String animal = JOptionPane.showInputDialog("Enter animal");
+					
+				}
+				}
+	
 
 	void playMoo() {
 		playNoise(mooFile);
