@@ -20,7 +20,21 @@ public class AnimalFarm {
 		/* 2. Make it so that the user can keep entering new animals. */
 				for (int i=1; i<999999999;) {
 					String animal = JOptionPane.showInputDialog("Enter animal");
-					
+					if (animal.equalsIgnoreCase("cow")) {
+						playNoise(mooFile);
+					}
+					if (animal.equalsIgnoreCase("duck")) {
+						playNoise(quackFile);
+					}
+					if (animal.equalsIgnoreCase("dog")) {
+						playNoise(woofFile);
+					}
+					if (animal.equalsIgnoreCase("cat")) {
+						playNoise(meowFile);
+					}
+					if (animal.equalsIgnoreCase("llama")) {
+						playNoise(llamaFile);
+					}
 				}
 				}
 	
@@ -35,6 +49,12 @@ public class AnimalFarm {
 
 	void playWoof() {
 		playNoise(woofFile);
+	}
+	void playMeow() {
+		playNoise(meowFile);
+	}
+	void playLlama() {
+		playNoise(llamaFile);
 	}
 
 	String quackFile = "quack.wav";
